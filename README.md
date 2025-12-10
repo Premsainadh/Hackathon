@@ -55,5 +55,6 @@ Use the following command to Run the Program:
 ```bash
 python app.py
 ```
-
+## Step-4: Input image path Format
+![Project Screenshot](Imagepath_format.png)
 
