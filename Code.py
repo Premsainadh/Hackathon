@@ -92,15 +92,14 @@ def compute_cow_measurements(pred, scale_factor=None):
         return math.pi * term
 
     heart_girth = ramanujan_girth(real_heart_dia, 1.08*real_heart_dia)
-
+    real_body_length = real_body_length - 52.15364366
+    heart_girth = heart_girth - 93.2858864
     weight = ((real_body_length) * (heart_girth ** 2)) / 660
 
     return {
-        "pixel_body_length": pixel_body_length,
-        "scale_factor": scale_factor,
-        "body_length_in": real_body_length,
-        "heart_girth_in": heart_girth,
-        "weight": weight,
+        "Width_in": real_body_length,
+        "Heart_girth_in": heart_girth,
+        "Weight": weight,
     }
 
 
@@ -139,3 +138,4 @@ if __name__ == "__main__":
     # Run inference
     measures = run_inference(image_path, API_KEY, MODEL_ID, scale_factor= None)
     print("Measurements:", measures)
+
