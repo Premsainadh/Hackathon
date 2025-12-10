@@ -35,14 +35,25 @@ The script uploads a cow image → receives keypoints → computes real-world me
 ---
 # Setup
 
-## 1️⃣ Clone the GitHub Repository
+## Step-1️: Clone the GitHub Repository
 
 Use the following command to clone your project:
 
 ```bash
 git clone https://github.com/Premsainadh/Hackathon
-  
+```
+## Step-2: Change Directory and install requirements
 
+Use the following command to Change Directory and install requirements:
+```bash
+cd Hackathon
+pip install -r requirements.txt
+```
+## Step-3: Run the Program
 
-Add this to your **requirements.txt**:
+Use the following command to Run the Program:
+```bash
+python app.py
+```
+
 
